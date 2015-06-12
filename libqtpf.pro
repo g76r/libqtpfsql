@@ -19,6 +19,7 @@ INCLUDEPATH = ../libqtpf
 
 DEFINES += LIBQTPF_LIBRARY
 
+exists(/usr/bin/ccache):QMAKE_CXX = ccache g++
 QMAKE_CXXFLAGS += -Wextra
 unix:debug:QMAKE_CXXFLAGS += -ggdb
 unix {
